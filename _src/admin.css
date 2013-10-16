@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/*	CSS para cliente API Web Service de SIIL
+	2010-2013 (c) Facturación Electrónica por Internet, S. de R.L. de C.V
+	http://www.enlacefiscal.com
+*/
+
+body, html {
+	background-color: #666666;
+	color: #444;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+}
+
+#main {
+	width: 650px;
+	margin: 0 auto;
+	background-image: url(../_img/siil_bg.png);
+        background-repeat:repeat-y;
+	background-position: top center;
+}
+
+h1 {
+	display: block;
+	width: 412px; height: 72px; /* width: 620px; height: 130px;*/
+	margin: 0;
+	padding-top: 58px;
+	padding-left: 238px;
+	background-image: url(../_img/siil_top.png);
+        background-repeat:repeat-y;
+	background-position: top;
+}
+h1 span {
+	display: block;
+	width: 355px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+h2 {
+	display: block;
+	width: 650px; height: 111px;
+	margin: 0; padding: 0;
+	background-image: url(../_img/siil_footer.png);
+        background-repeat:repeat-y;
+	background-position: bottom;
+}
+h2 span{ display: none; }
+
+#respuesta {
+	margin: 10px 42px;
+	min-height: 300px;
+}
+
+#detalle {
+	border-top: 2px #285B86 solid;
+	border-bottom: 2px #285B86 solid;
+	padding: 12px 5px 12px 80px;
+	background-repeat: no-repeat;
+	background-position: 8px center;
+}
+#detalle.ok 	{	background-image: url(../_img/ok.png); }
+#detalle.error 	{	background-image: url(../_img/error.png); }
+
+#detalle.error th	{ color: #F00; }
+
+table {
+	font-size: 15px;
+}
+
+p.instruccion { font-size: 14px; }
+
+/*
+ * API SIIL
+ */
+ 
+.version {
+    text-align: right;
+}
+
+.linea {
+	border-top: 2px #666666 solid;
+        margin: 12px 0px 12px 0px;
+}
+
+.detalleForm {
+        margin: 5px 0px 5px 1px;
+	border-top: 2px #285B86 solid;
+	border-bottom: 2px #285B86 solid;
+	padding: 12px 5px 12px 10px;
+	background-repeat: no-repeat;
+	background-position: 8px center;
+}
+
+.consultar {
+        width: auto;
+        height: auto;
+        text-align: right;
+}
+
+.formatoLetra {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+}
+
+.colorRojo {
+    color:#FF6600;
+}
+
+.colorVerde {
+    color:#008B4E;
+}
+
+.errorG colorRojo{
+    text-align:center;
+}
+
+.divError {
+    border-radius:3px; 
+    -moz-border-radius:3px; /* Firefox */ 
+    -webkit-border-radius:3px; /* Safari y Chrome */
+    border:1px solid #FF6600;
+    background:#FFC0CB;
+}
+
+#fondoblanco {
+	width: 620px;
+	margin: 0 auto;
+        background-color: white;
+}
+
+.tabla_detalle {
+    margin: 10px auto;
+    width: 98%;
+}
+.tabla_detalle td {
+    border: 1px solid #CCCCCC;
+    margin: 7px;
+    padding: 4px;
+}
+.tabla_detalle thead th {
+    background-color: #D6DFF7;
+    border: 1px solid #D6DFF7;
+    font-weight: 700;
+    padding: 4px;
+}
+.tabla_detalle tfoot td{
+    background-color: #FFF;
+    border: none !important;
+    font-weight: bold;
+    padding: 4px;
+}
+.tabla_detalle td a{
+    text-align: center;
+    margin: 0 auto;
+} 
+.tabla_detalle #trprin:hover  {
+    background: #DAEDFF; 
+}
+.hide{
+    display: none;
+    float: left;
+}
+
+.tituloTabla {
+    font-family: "Helvetica", regular, monospace;
+    font-size: 18px;
+}

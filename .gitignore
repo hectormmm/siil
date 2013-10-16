@@ -1,0 +1,20 @@
+#Version Anterior
+/request.php
+/generar.php
+/cancelar.php
+phpMyAdmin*
+Connections/db_api*
+_src/v1.css
+pi.php
+
+#PMA
+pma
+phpMyAdmin*
+
+#GIT
+repositoryBare.git
+
+#Carpetas Contenedoras
+preCFD/*
+cfdi/preCFDI/*
+cfdi/qr/*
