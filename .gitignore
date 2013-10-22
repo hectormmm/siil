@@ -2,6 +2,9 @@
 /request.php
 /generar.php
 /cancelar.php
+_img/bg.png
+_img/error.png
+_img/ok.png
 phpMyAdmin*
 Connections/db_api*
 _src/v1.css
