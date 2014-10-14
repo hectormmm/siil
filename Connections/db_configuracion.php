@@ -6,4 +6,5 @@ define('USER', "enlacefiscal");
 define('PASS', "dbefapi");
 
 define('GUARDAR_ORACLE', 1);
+define('GUARDAR_XML_CFDI', 1);
 ?>
