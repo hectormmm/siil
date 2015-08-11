@@ -1,0 +1,258 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body {
+    min-width: 300px;
+    width: 300px;
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+.datos_principales {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    text-align: center;
+}
+
+.direccion_emisor {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    text-align: center;
+}
+
+.emitido_en {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    text-align: center;
+}
+.titulo_campos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 9pt;
+    text-align: left;
+}
+
+.value_campos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    text-align: left;
+}
+
+.infoPago_titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 11pt;
+    text-align: center;
+}
+
+.infoPago_titulo_campos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 8pt;
+    text-align: left;
+}
+
+.infoPago_titulo_value {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    text-align: left;
+}
+
+.timbre_titulo_campos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 8pt;
+    text-align: left;
+}
+
+.timbre_titulo_value {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    text-align: left;
+}
+
+.timbre_titulo_value_cadena{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7pt;
+    text-align: left;
+}
+
+.title_table {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 9pt;
+    text-align: center;
+}
+
+.totales_title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 9pt;
+}
+
+.totales_value {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 8pt;
+}
+
+.totales_value_cantidad {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+}
+
+.totales {
+    text-align: right;
+}
+
+.table {
+    width: 100%;
+}
+
+.content_table {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7pt;
+}
+
+.content_table td {
+    padding-left: 2pt;
+}
+
+.table_campo {
+    line-height: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.border {
+    border: 1px solid;
+}
+
+.text_left {
+    text-align: left;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.divisor {
+    width: 100%;
+    border-bottom: 1px solid #000000;
+}
+
+.campo {
+    padding-bottom: 4px;
+}
+
+.table_unit {
+    line-height: 1px;
+}
+
+.text_divisor {
+   line-height: 16px;
+}
+
+.direccion_emisor_text_divisor {
+    line-height: 16px;
+}
+
+.text_divisor_conceptos_desc {
+    line-height: 12px;
+}
+
+.td_pesos {
+    padding-left: 2px;
+}
+
+.errorG {
+    text-align:center;
+}
+
+.divError {
+    border-radius:3px;
+    -moz-border-radius:3px; /* Firefox */
+    -webkit-border-radius:3px; /* Safari y Chrome */
+    border:1px solid #FF6600;
+    background:#FFC0CB;
+}
+
+.formatoLetra {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+}
+
+.hr {
+    border-top: 1px solid black;
+    margin-bottom: 6px;
+}
+
+.leyenda_ef {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7pt;
+}
+
+.ef_webpage {
+    font-size: 9pt;
+    font-weight: bold;
+}
