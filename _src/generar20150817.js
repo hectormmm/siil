@@ -4,12 +4,19 @@ $(document).ready(function() {
         url: 'generarAbrirCFDI.php',
         
         success: function(result) {
+            $('#img_paso1').hide();
+            $('#img_paso2').hide();
+            $('#img_paso3').hide();
+            $('#img_paso4').hide();
+
             if (result.ERROR) {
                 $('#tituloOperacion').addClass('colorRojo');
                 $('#tituloOperacion').html('<strong>Error</strong>');
                 $('#errorG').html(result.ERROR);
                 $('#errorG').show();
+                $("#img_paso1").show()
                 $('#img_paso1').attr('src','../_img/error.png');
+                ;
                 $('#imgError').show();
                 $(window).unbind('beforeunload');
             
@@ -33,6 +40,8 @@ $(document).ready(function() {
                 
             } else if(result.SUCCESS){
                 $('#img_paso1').attr('src','../_img/palomita.gif');
+                $("#img_paso1").show();
+                $('#img_paso2').show();
                 $('#img_paso2').attr('src','../_img/ajax-loader.gif');
                 
                 $.ajax({
@@ -51,6 +60,8 @@ $(document).ready(function() {
                             
                         } else if(result.SUCCESS) {
                             $('#img_paso2').attr('src','../_img/palomita.gif');
+
+                            $('#img_paso3').show();
                             $('#img_paso3').attr('src','../_img/ajax-loader.gif');
                             
                             if (result.UUID) {
@@ -80,8 +91,11 @@ $(document).ready(function() {
                                         
                                         
                                         $('#img_paso3').attr('src','../_img/palomita.gif');
+
+                                        $("#img_paso4").show();
                                         $('#img_paso4').attr('src','../_img/ajax-loader.gif');
-                                        
+
+
                                         $.ajax({
                                             type: 'POST',
                                             url: 'generarGuardarOracle.php',
@@ -94,6 +108,8 @@ $(document).ready(function() {
                                                     $('#errorG').show();
                                                     $('#img_paso4').attr('src','../_img/error.png');
                                                     $('#imgError').show();
+                                                    $("#btn_imprimir").show();
+
                                                     $(window).unbind('beforeunload');
                                                 } else if(result.SUCCESS){
                                                     if(result.GUARDADO == 1){
@@ -111,6 +127,8 @@ $(document).ready(function() {
                                                     $("#btn_imprimir").show();
                                                     $(window).unbind('beforeunload');
                                                 } else {
+                                                    $("#btn_imprimir").show();
+
                                                     $('#tituloOperacion').addClass('colorRojo');
                                                     $('#tituloOperacion').html('<strong>Error</strong>');
                                                     $('#errorG').html('Error Interno');
@@ -127,6 +145,8 @@ $(document).ready(function() {
                                                 $('#errorG').show();
                                                 $('#img_paso4').attr('src','../_img/error.png');
                                                 $('#imgError').show();
+                                                $("#btn_imprimir").show();
+
                                                 $(window).unbind('beforeunload');
                                             }
                                         });
